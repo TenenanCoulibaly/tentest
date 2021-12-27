@@ -1,0 +1,342 @@
+header {
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    top:0px;
+    gap: 20px;
+    height: 130px;
+    margin-top: -9px;
+    border-radius: 12px;
+    background: #a074c4;
+    background-image: url("icones/vaisseau.gif");
+    background-size: 100% 100%;
+    border: solid rgb(20, 20, 1);
+    box-shadow: inset 12px -12px 0px #785793,
+                inset -12px 12px 0px #c891f5;
+}
+
+header img {
+    position: static;
+    width: 70px;
+    height: 95px;
+}
+
+.online {
+    color:rgb(97, 255, 6);
+    margin-bottom: -27px;
+    margin-left: -18%;
+    margin-bottom: -70px;
+    position: static;
+    animation: online 3s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite reverse backwards;
+}
+
+@keyframes online {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.myName {
+    padding: 5px;
+    color:rgb(255, 255, 255);
+    margin-bottom: -5px;
+    text-shadow: 4px 6px 2px rgba(3, 15, 26, 0.432), 0 0 1em grey, 0 0 0.2em rgb(64, 134, 145);
+}
+
+herder div {
+    color: orangered;
+    margin-bottom: -3%;
+}
+
+/* ================================ FIN DE HEADER  ======================================*/
+/* ================================ DANS LA BALISE BODY  ===============================*/
+
+body {
+    background-image: url("icones/fond22.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar  {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-radius: 50px;
+  background: #775bf1e7;
+  box-shadow:  20px 20px 60px #3b8db3,
+              -20px -20px 60px #9e95f100;
+  animation: navigationAnimation 5s cubic-bezier(0.11, 0, 0.5, 0) 0ms 15 normal forwards;
+
+}
+
+@keyframes navigationAnimation {
+
+    0% { transform: translateY(10%); }
+    10% { transform: translateY(-10%); }
+    20% { transform: translateY(5%); }
+    30% { transform: translateY(-5%); }
+    40% { transform: translateY(3%); }
+    50% { transform: translateY(-3%); }
+    60% { transform: translateY(2%); }
+    70% { transform: translateY(-2%); }
+    80% { transform: translateY(1%); }
+    90% { transform: translateY(-1%); }
+    100% { transform: translateY(0%); }
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: gold;
+  border-radius: 6px;
+}
+
+#bigDiv {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+@keyframes container {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container {
+
+  text-align: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+
+}
+
+section h1 {
+
+  margin-top: -1px;
+  background-color: rgb(33, 61, 1);
+  color: white;
+  border-radius: 15px;
+  border-bottom: solid 2px orange;
+  border-right: solid 2px orange;
+
+}
+
+section {
+
+  margin: 2px;
+  border: solid 3px rgba(161, 108, 245, 0.582);
+  border-radius: 20px;
+  background-color: rgba(175, 238, 238, 0.404);
+  box-shadow: inset 22px 22px 83px #88a8b780,
+              inset -22px -22px 83px #d4ffff81;
+  width: 390px;
+
+}
+
+section img {
+  width: 45px;
+  height: 45px;
+}
+
+form {
+  border-radius: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+form label {
+  color: black;
+  padding: 8px;
+}
+
+form h1 {
+  margin: 3px;
+  margin-top: -1px;
+  background-color: rgb(33, 61, 1);
+  color: white;
+  border-radius: 15px;
+  border-bottom: solid 2px orange;
+  border-right: solid 2px orange;
+}
+
+#livreOr {
+
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  animation: livrer 1s cubic-bezier(0.36, 0, 0.66, -0.56) 0s 1 reverse backwards;
+
+}
+
+@keyframes livreOr {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(10);
+  }
+}
+
+input {
+  border: solid 2px orange;
+  height: 35px;
+  text-align: center;
+  border-radius: 20%;
+}
+
+textarea {
+  margin-bottom: 10px;
+  width: 60%;
+  text-align: center;
+  border-radius: 20%;
+}
+
+.Envoyer:hover {
+    
+  width: 100px;
+  padding: 10px;
+  color:rgb(97, 255, 6);
+  margin-top: 3px;
+  background-color: rgba(0, 109, 109, 0.671);
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border : 2px solid #06eaf1
+}
+
+/* Gestion des erreurs et succès de messagerie */
+
+.succes_msg {
+  color:rgb(97, 255, 6);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.erreur_msg {
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.succes_commentaire{
+  color:rgb(97, 255, 6);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.error_commentaire {
+
+  color: red;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+/* ===============================  FIN DE BODY  ===================================*/
+/* ========================== DANS LA BALISE FOOTER ================================*/
+#contact {
+  padding: 5px 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 28px;
+  height: 130px;
+  margin-bottom: -9px;
+  border-radius: 12px;
+  background: #a074c48f;
+  background-image: url("icones/decor.gif");
+  background-size: 100% 100%;
+  border: solid rgb(20, 20, 1);
+  box-shadow: inset 12px -12px 0px #7857939d,
+              inset -12px 12px 0px #c891f58e;
+}
+
+#contact h2 {
+  color: gold;
+  text-align: center;
+}
+
+
+address {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+address a {
+  color: gold;
+}
+
+address a:hover {
+  color: black;
+  background-color: pink;
+  padding: 1px;
+}
